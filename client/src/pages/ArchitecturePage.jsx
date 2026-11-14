@@ -159,7 +159,7 @@ node_documents -->|"uses database"| node_supabase`;
                 Raw Mermaid Architecture Definition
               </span>
               <a
-                href="https://gitdiagram.com/afnan-0206/ai-for-accessibility-inclusion"
+                href="https://gitdiagram.com/gagancv28/samajh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-blue-400 hover:underline flex items-center gap-1"
