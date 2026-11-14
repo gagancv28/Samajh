@@ -1,0 +1,39 @@
+name: Client CI
+
+on:
+  push:
+    branches: [ main, dev ]
+    paths:
+      - 'client/**'
+      - '.github/workflows/ci-client.yml'
+  pull_request:
+    branches: [ main, dev ]
+    paths:
+      - 'client/**'
+
+jobs:
+  build:
+    name: Build & Validate Client
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'client/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: client
+        run: npm ci
+
+      - name: Build client production bundle
+        working-directory: client
+        env:
+          VITE_API_URL: https://samajh-backend.onrender.com/api
+          VITE_USE_MOCK: false
+        run: npm run build
