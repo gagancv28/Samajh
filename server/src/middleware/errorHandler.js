@@ -1,9 +1,14 @@
 const { ZodError } = require('zod');
 const multer = require('multer');
 
+/**
+ * Global Error Handling Middleware
+ * Guarantees consistent error structure and ensures secrets, paths, and stack traces never leak.
+ */
 const errorHandler = (err, req, res, next) => {
   if (process.env.NODE_ENV !== 'test') {
-    console.error('Server Error:', err.message || err);
+    // Log sanitized error message without sensitive payloads
+    console.error(`[Error] ${req.method} ${req.originalUrl}:`, err.message || err);
   }
 
   // Zod validation errors

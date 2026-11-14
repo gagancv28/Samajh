@@ -12,6 +12,7 @@
     "url": "https://github.com/gagancv28/Samajh/issues"
   },
   "scripts": {
+    "test": "npm test --prefix server",
     "build": "npm run build --prefix client",
     "start": "npm start --prefix server",
     "client:dev": "npm run dev --prefix client",
@@ -19,7 +20,8 @@
     "client:preview": "npm run preview --prefix client",
     "server:dev": "npm run dev --prefix server",
     "server:start": "npm start --prefix server",
-    "server:test": "npm test --prefix server"
+    "server:test": "npm test --prefix server",
+    "check:all": "npm test --prefix server && npm run build --prefix client"
   },
   "keywords": [
     "accessibility",
