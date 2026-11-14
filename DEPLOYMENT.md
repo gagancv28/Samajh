@@ -30,7 +30,7 @@ This repository includes a [`render.yaml`](./render.yaml) configuration file:
 
 1. Log in to [dashboard.render.com](https://dashboard.render.com).
 2. Click **New +** -> **Blueprint**.
-3. Connect your repository: `https://github.com/Afnan-0206/AI-for-Accessibility-Inclusion`.
+3. Connect your repository: `https://github.com/gagancv28/Samajh`.
 4. Render will detect `render.yaml` and prompt you for the required environment variables:
    - `SUPABASE_URL`: Your Supabase Project URL
    - `SUPABASE_SECRET_KEY`: Your Supabase `service_role` secret key
@@ -73,7 +73,7 @@ If creating a manual web service:
 ### Deploying via Vercel Dashboard
 
 1. Log in to [vercel.com](https://vercel.com) and click **Add New...** -> **Project**.
-2. Import your GitHub repository: `Afnan-0206/AI-for-Accessibility-Inclusion`.
+2. Import your GitHub repository: `gagancv28/Samajh`.
 3. In **Project Settings**:
    - **Framework Preset**: `Vite`
    - **Root Directory**: Click *Edit* and select **`client`** (or leave as root, as root fallback `vercel.json` is provided).

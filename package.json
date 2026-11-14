@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "Samajh - AI-Powered Citizen Document Simplification Platform",
+  "homepage": "https://github.com/gagancv28/Samajh#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gagancv28/Samajh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gagancv28/Samajh/issues"
+  },
   "scripts": {
     "build": "npm run build --prefix client",
     "start": "npm start --prefix server",
@@ -23,6 +31,6 @@
     "vite",
     "express"
   ],
-  "author": "Afnan & Samajh Team",
+  "author": "GaganCV & Samajh Team",
   "license": "MIT"
 }
